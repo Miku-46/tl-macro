@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TKL_macro</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="description" content="TikTok Lite の動画を自動で次へ進める Android アプリ(非公式)。">
+<style>
+:root{--bg:#f5f5f2;--card:#fff;--text:#1f1f1e;--sub:#6b6a66;--line:#e4e3de;--accent:#185fa5;--ok:#3b6d11;--warn:#854f0b;--warnbg:#faeeda}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1e1e1c;--text:#ecece8;--sub:#a3a29b;--line:#2c2c2a;--accent:#85b7eb;--ok:#639922;--warn:#fac775;--warnbg:#412402}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif}
+main{max-width:640px;margin:0 auto;padding:24px 16px 56px}
+h1{font-size:26px;margin:8px 0 4px}
+h2{font-size:18px;margin:32px 0 8px}
+p{margin:8px 0}
+.sub{color:var(--sub);font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+.btn{display:block;text-align:center;background:var(--ok);color:#fff;text-decoration:none;font-weight:600;font-size:18px;padding:16px;border-radius:12px;margin:14px 0 6px}
+.qr{display:flex;gap:16px;align-items:center}
+.qr img{width:132px;height:132px;border-radius:8px;background:#fff;padding:6px;flex:none}
+ol{padding-left:22px;margin:8px 0}
+li{margin:8px 0}
+.warn{background:var(--warnbg);color:var(--warn);border-radius:12px;padding:14px 16px;margin:12px 0;font-size:15px}
+code{background:var(--line);padding:1px 6px;border-radius:4px;font-size:14px}
+footer{margin-top:36px;color:var(--sub);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+  <p class="sub">非公式アプリ ・ Android 専用</p>
+  <div style="display:flex;align-items:center;gap:14px">
+    <img src="icon.png" alt="TKL_macro のアイコン" width="72" height="72" style="border-radius:16px">
+    <h1 style="margin:0">TKL_macro</h1>
+  </div>
+  <p>TikTok Lite の動画を、上スワイプで自動で次へ進めるアプリです。3 分以上の動画だけをじっくり見て、短い動画や広告は素早く飛ばします。</p>
+
+  <a class="btn" href="TKL_macro.apk" download>APK をダウンロード(0.7 MB)</a>
+  <p class="sub" style="text-align:center">バージョン 1.2 ・ Android 7.0 以上(長さの判定は Android 11 以上)</p>
+
+  <div class="card qr">
+    <img src="qr.png" alt="このページを開く QR コード">
+    <div>
+      <b>パソコンでご覧の場合</b>
+      <p class="sub" style="margin:4px 0 0">スマホのカメラでこの QR コードを読み取ると、このページがスマホで開きます。</p>
+    </div>
+  </div>
+
+  <h2>インストールの手順</h2>
+  <div class="card">
+    <ol>
+      <li><b>ダウンロード</b>: スマホでこのページを開いて、上の「APK をダウンロード」を押します。「この種類のファイルは端末に害を与える可能性があります」と出たら、「OK」を押します。</li>
+      <li><b>インストール</b>: ダウンロードしたファイルを開きます。「不明なアプリのインストール」を求められたら、いま使っているブラウザに「許可」を出します。</li>
+      <li><b>Google Play プロテクト</b>: 「このアプリは確認されていません」などと出たら、「詳細」→「インストールする」を選びます(Google Play で配布していないための表示です)。</li>
+      <li><b>アクセシビリティをオン</b>: アプリを開くと、手順が表示されます。「アクセシビリティ設定を開く」から「TKL_macro」をオンにします。</li>
+      <li><b>開始</b>: TikTok Lite を入れておいて、アプリの「開始」を押します。TikTok Lite が自動で開き、動き始めます。</li>
+    </ol>
+  </div>
+
+  <div class="warn">
+    <b>「TKL_macro」がグレーで押せないとき(Android 13 以降)</b><br>
+    ブラウザから入れたアプリは、安全のため、アクセシビリティが制限されます。<br>
+    設定 → アプリ → 「TKL_macro」 → 右上の「︙」 → <b>「制限された設定を許可」</b>を押してから、もう一度アクセシビリティをオンにしてください。
+  </div>
+
+  <h2>使い方のコツ</h2>
+  <div class="card">
+    <ul style="padding-left:20px;margin:0">
+      <li>動作中は、画面が消えません。充電しながらがおすすめです。</li>
+      <li>画面を触ると、15 秒だけ一時停止します。</li>
+      <li>停止は、アプリの「停止」か、TikTok 上の左側の丸いボタンです。</li>
+      <li>「作動時間」を 1〜30 分で指定すると、時間が来たら自動で止まります。</li>
+    </ul>
+  </div>
+
+  <h2>プライバシーと注意</h2>
+  <div class="card">
+    <ul style="padding-left:20px;margin:0">
+      <li>読み取るのは、TikTok 系アプリの画面だけです。内容は<b>保存も送信もしません</b>。このアプリは、通信の権限を持っていません。</li>
+      <li>動作の記録(視聴本数など)は、お使いの端末の中にだけ残ります。</li>
+      <li><b>自動操作は、TikTok の利用規約に反する可能性があります。</b>アカウントの停止・ポイントの取り消しなどの不利益が生じても、責任を負えません。自己責任でお使いください。</li>
+      <li>TikTok とは無関係の、非公式のアプリです。</li>
+    </ul>
+  </div>
+
+  <footer>
+    アンインストールは、通常のアプリと同じです(設定 → アプリ → TKL_macro → アンインストール)。アクセシビリティも、設定でオフにできます。
+  </footer>
+</main>
+</body>
+</html>
