@@ -35,10 +35,16 @@ footer{margin-top:36px;color:var(--sub);font-size:13px}
     <img src="icon.png" alt="TKL_macro のアイコン" width="72" height="72" style="border-radius:16px">
     <h1 style="margin:0">TKL_macro</h1>
   </div>
-  <p>TikTok Lite の動画を、上スワイプで自動で次へ進めるアプリです。3 分以上の動画だけをじっくり見て、短い動画や広告は素早く飛ばします。</p>
+  <p>TikTok Lite の動画を、上スワイプで自動で次へ進めるアプリです。初期設定の「短尺モード」では、1 本を 15〜30 秒ずつ見て、広告は素早く飛ばします。「長尺優先モード」では、3 分以上の動画だけをじっくり見ます。</p>
 
   <a class="btn" href="TKL_macro.apk" download>APK をダウンロード(0.7 MB)</a>
-  <p class="sub" style="text-align:center">バージョン 1.3.1 ・ Android 7.0 以上(長さの判定は Android 11 以上)</p>
+  <p class="sub" style="text-align:center">バージョン 1.5.1 ・ Android 7.0 以上(長尺優先モードは Android 11 以上)</p>
+  <p class="sub" style="text-align:center;word-break:break-all;font-size:11px">SHA-256: 167d6540148bc26ea7ed8f69a90dfd9ed11c5704d9873b95c057905a3909283f</p>
+
+  <div class="warn">
+    <b>以前の版(1.5.0 以前)が入っている方へ</b><br>
+    今回の版から、署名の鍵を新しくしました。<b>以前の版の上には、入れられません。</b>先に、設定 → アプリ → 「TKL_macro」 → アンインストール をしてから、入れ直してください(設定や履歴は、初期値に戻ります)。以後の更新は、上書きできます。
+  </div>
 
   <div class="card qr">
     <img src="qr.png" alt="このページを開く QR コード">
@@ -80,6 +86,8 @@ footer{margin-top:36px;color:var(--sub);font-size:13px}
       <li>「開始」を押すと、TikTok Lite が自動で開いて、動き始めます。</li>
       <li>作動時間の初期値は <b>15 分</b>です。時間が来ると、自動で止まります。設定で 0〜30 分に変えられます(0 は「止めるまで動かす」)。</li>
       <li>自動で止まると、<b>通知でお知らせ</b>します(視聴本数なども表示)。設定でオフにできます。Android 13 以降は、最初に通知の許可を聞かれます。</li>
+      <li>「いいね」を、動画のダブルタップで押します(<b>10 分あたり 5 個まで</b>が初期値。設定で、オフや個数の変更ができます)。</li>
+      <li>「位置情報を許可しますか?」などの許可の確認が出たときは、<b>許可せずに</b>閉じます。動かなくなった動画は、「おすすめ」タブを押して、読み込み直します。</li>
     </ul>
   </div>
 
